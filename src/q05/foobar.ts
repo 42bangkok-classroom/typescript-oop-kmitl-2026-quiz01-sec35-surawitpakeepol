@@ -1,14 +1,19 @@
-const number = Number(process.argv[2]);
-if (number == number/3 || number == number/7){
+const input = process.argv[2];
+const point = Number(input);
+if ( input === ""){
+  console.log('Invalid Input');  
+} 
+else if (point == point/3 || point == point/7){
   console.log('FooBar');  
 } 
-else if (number == number/3){
+else if (point == point/3){
   console.log('Foo');   
 }
-else if (number == number/7){
+else if (point == point/7){
       console.log('Bar');  
 }
  
 else {
   console.log('Invalid Input');
 }
+export {};
